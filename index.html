@@ -94,6 +94,21 @@
           font-size: 1.8rem;
         }
       }
+      /* Default: show desktop, hide mobile */
+.hero-mobile {
+  display: none;
+}
+
+/* Switch to mobile at 768px and below */
+@media (max-width: 768px) {
+  .hero-desktop {
+    display: none;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+}
     </style>
   </head>
 
@@ -151,5 +166,51 @@
         </p>
       </div>
     </section>
+<!-- HERO SECTION – MOBILE HOMEPAGE -->
+<section class="hero hero-mobile">
+  <div class="hero-image">
+    <img
+      src="hero-unity-banner.png"
+      alt="Diverse Jewish individuals assembling a Star of David puzzle in front of a central national house of worship, with a dove of peace overhead."
+    />
+  </div>
+
+  <div class="hero-text">
+    <h1>UNITING THE JEWISH WORLD.<br />BUILDING REGIONAL PEACE.</h1>
+
+    <p>
+      A new platform dedicated to restoring Jewish unity while advancing realistic
+      regional peace solutions.
+    </p>
+
+    <p>
+      Rooted in the belief that diverse voices—across religious streams and
+      throughout society—can transform the remaining challenges we face into a
+      shared mission.
+    </p>
+
+    <p>
+      For generations, the Jewish people have navigated struggle, division, and
+      profound differences of opinion. Today, we see a flourishing country, and we
+      choose to transform the remaining challenges into a source of strength.
+    </p>
+
+    <p>
+      At the heart of our vision are realistic regional peace solutions and a
+      Central National House of Worship designed to bring communities together.
+    </p>
+
+    <p>
+      Through broad-based engagement, we build unwavering resolve from diversity,
+      draw optimism from obstacles, and strive for unity grounded in our
+      commonality.
+    </p>
+
+    <a href="/login" class="hero-button">Enter Secure Site</a>
+    <p class="hero-note">
+      This website is for password holders only. Access is restricted to authorized users.
+    </p>
+  </div>
+</section>
   </body>
 </html>
